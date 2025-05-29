@@ -1,21 +1,17 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/* Estilos para desktop */
+
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    line-height: 1.6; 
-    padding: 20px;
-}
 
-/* Header Styling */
-header {
+header{
     position: relative;
     width: 100%;
     height: 200px;
@@ -23,18 +19,16 @@ header {
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to left, #770000fb, #67585880);
-    padding: 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
 }
+
 nav {
     position: absolute;
     top: 120px;
     left: 30px;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 
@@ -54,7 +48,6 @@ header img {
     margin-right: 15px;
 }
 
-
 header h1 {
     position: absolute;
     top: 68px;
@@ -73,12 +66,10 @@ header audio {
     width: 250px;
     height: 20px;
     border-radius: 5px;
-    
 }
+
 header ul {
     list-style: none;
-    padding:0;
-    margin: 0;  
     display: flex;
       
 }
@@ -95,48 +86,55 @@ header ul li a {
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     transition: color 0.3s ease;
-
-    
-    
-   
 }
 header ul li a:hover {
     color: #fb5050;
 }
 
-/* Main Content Styling */
+/* Main Content Styling #eae7e780*/
 main {
-    
-    background-color: #eae7e780;
+    background-color:aqua ;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 20px;
     padding: 20px;
-    max-width: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;  
-    margin-right: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.733);
 }
-/* Article Styling */
 
-#destaques {
-    width: 100%vw;
-    height: 100%vh;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+/* Article Styling */
+section#destaques {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fdfcfc;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.titlo2 {
+    font-size: 1.5em;
+    color: #942828;
     
 }
 
-.container {
+.paragrafo {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    text-align: justify;
+}   
+
+section#container {
     display: flex;  /* Ativa o Flexbox*/
-    height: 100vh;  /* Altura total da tela*/
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #programacao {
    flex: 3; /* Ocupa 3 partes do espaço*/
    background-color: aliceblue;
-   padding: 20px 
+   padding: 20px;
 }
 
 #barra-lateral {
@@ -181,22 +179,20 @@ th {
 }
 
 #ultimas-noticias {
-    width: 100%vw;
-    height: 100%vh;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fdfcfc;
+    padding: 20px;  
+
 }
    
 
 /* Footer Styling */
 footer {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
     background: #770000fb;
     color: #fff;
-}
+}  

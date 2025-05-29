@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Estilos para tablet */
+
+
+/* Main Content Styling #eae7e780*/
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    background-color:aqua ;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.733);
+}
+
+section#destaques {
+    width: 998px;
+    margin: 0 auto;
+    background-color: #fdfcfc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section#container {
+    display: flex;  /* Ativa o Flexbox*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section#ultimas-noticias {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fdfcfc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
