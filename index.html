@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/tablet.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Site Leste fm</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Bem-vindo ao site da Leste fm</h1>
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#programas">Programas</a></li>
@@ -43,6 +45,27 @@
     <footer>
         <p>&copy; 2023 Leste fm. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                burguer.textContent = "menu";
+            } else {
+                menu.style.display = "block";
+                burguer.textContent = "close";
+            }
+
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+        }
+        
+            
     
+    </script>
 </body>
 </html>
